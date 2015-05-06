@@ -106,6 +106,7 @@ Library
                        filepath >= 1.1,
                        random >= 1.0.0,
                        split >= 0.1,
+                       stm,
                        template-haskell,
                        time >= 1.2,
                        transformers >= 0.2.1,
@@ -124,31 +125,31 @@ Library
 Executable lamdu
   hs-Source-Dirs:      .
                 ,      submodules/AlgoW
-  Build-Depends:       base >= 4,
-                       aeson,
-                       hashable,
-                       containers,
-                       directory,
-                       filepath,
-                       deepseq,
-                       deepseq-generics >= 0.1,
-                       lens,
-                       pretty,
-                       prettyclass,
-                       void >= 0.6.1,
-                       graphics-drawingcombinators >= 1.4,
-                       binary,
-                       transformers,
-                       GLFW-b,
-                       split,
-                       TraceUtils,
-                       bytestring,
-                       lamdu-ide,
-                       random,
-                       List >= 0.5.1,
-                       either,
-                       utf8-string,
-                       TypeCompose
+  Build-Depends:       GLFW-b
+                     , List >= 0.5.1
+                     , TraceUtils
+                     , TypeCompose
+                     , aeson
+                     , base >= 4
+                     , binary
+                     , bytestring
+                     , containers
+                     , deepseq
+                     , deepseq-generics >= 0.1
+                     , directory
+                     , either
+                     , filepath
+                     , graphics-drawingcombinators >= 1.4
+                     , hashable
+                     , lamdu-ide
+                     , lens
+                     , pretty
+                     , prettyclass
+                     , random
+                     , split
+                     , transformers
+                     , utf8-string
+                     , void >= 0.6.1
   Other-Modules:       Lamdu.CharClassification
                ,       Lamdu.Config
                ,       Lamdu.Data.Anchors
